@@ -137,7 +137,7 @@ function getOrderAmountHTML(){
 		retHTML += '<div>'+igstPercent+'% IGST : '+igstAmount+'</div>';
 		total += igstAmount;
 	}
-	
+	total = total.toFixed(0);
 	retHTML += '<div>Total : '+total+'</div>';
 	return retHTML;
 	
