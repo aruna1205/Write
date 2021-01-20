@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	require_once('includes/common.php');
-	
+	require('includes/dbconfig.php');
 
 	$common = new common();
 
@@ -43,7 +43,7 @@
   </head>
   
   <body data-home-page="Home.html" data-home-page-title="Home" class="u-body"><header class="u-clearfix u-header u-header" id="sec-246e"><div class="u-clearfix u-sheet u-valign-middle-sm u-valign-middle-xs u-sheet-1">
-        <a href="https://nicepage.com" class="u-align-center u-image u-logo u-image-1" data-image-width="1218" data-image-height="278">
+        <a href="<?php echo $baseUrl; ?>" class="u-align-center u-image u-logo u-image-1" data-image-width="1218" data-image-height="278">
           <img src="images/LogoFinal.png" class="u-logo-image u-logo-image-1" data-image-width="277">
         </a>
       </div></header>
@@ -296,7 +296,7 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
     </section>
     <section class="u-clearfix u-section-7" id="sec-50a7">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <a href="https://nicepage.com/css-templates" class="u-align-center u-btn u-button-style u-custom-color-1 u-hover-custom-color-2 u-btn-1">Yes, I want to buy this kit !</a>
+        <a href="checkout.php" class="u-align-center u-btn u-button-style u-custom-color-1 u-hover-custom-color-2 u-btn-1">Yes, I want to buy this kit !</a>
         <img src="images/trust.png" alt="" class="u-image u-image-default u-image-1" data-image-width="540" data-image-height="82">
       </div>
     </section>

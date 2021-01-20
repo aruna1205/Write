@@ -3,6 +3,7 @@
 	ini_set('display_errors', 1);
 
 	require_once('../includes/common.php');
+	require('../includes/dbconfig.php');
 	session_start();
 
 	$common = new common();

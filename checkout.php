@@ -1,8 +1,7 @@
 <?php
-	ini_set('display_errors', 1);
 	session_start();
 	require_once('includes/common.php');
-	
+	require('includes/dbconfig.php');
 
 	$common = new common();
 
@@ -80,7 +79,7 @@
 		fbq('track', 'AddToCart', {});
 	</script>
   
-        <a href="https://nicepage.com" class="u-align-center u-image u-logo u-image-1" data-image-width="1218" data-image-height="278">
+        <a href="<?php echo $baseUrl; ?>" class="u-align-center u-image u-logo u-image-1" data-image-width="1218" data-image-height="278">
           <img src="images/LogoFinal.png" class="u-logo-image u-logo-image-1" data-image-width="277">
         </a>
       </div></header>

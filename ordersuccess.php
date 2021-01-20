@@ -3,13 +3,14 @@
 	session_start();
 
 	require_once('includes/common.php');
+	require('includes/dbconfig.php');
 	$common = new common();
 	$orderDetails = $common->getOrderDetails();
 	
 	$count = $common->updateOrderStatus($orderStatus="SUCCESS");
 	
 	
-	//$common->sendOrderPlacementMail($orderDetails);
+	$common->sendOrderPlacementMail($orderDetails);
 	
 	//mail( 'email4arun@gmail.com', 'Writeneat Demo', 'Your Order has been placed. Thank you' );
 
@@ -52,7 +53,7 @@
   	<script>
 		fbq('track', 'Purchase', {currency: "INR", value: <?php echo $orderDetails['order_amount']; ?>});
 	</script>
-        <a href="https://nicepage.com" class="u-align-center u-image u-logo u-image-1" data-image-width="1218" data-image-height="278">
+        <a href="<?php echo $baseUrl; ?>" class="u-align-center u-image u-logo u-image-1" data-image-width="1218" data-image-height="278">
           <img src="images/LogoFinal.png" class="u-logo-image u-logo-image-1" data-image-width="277">
         </a>
       </div></header>

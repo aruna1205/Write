@@ -88,7 +88,7 @@ $(function() {
 			    if(orderType=='COD' || orderType=='online'){
 		    		if(orderType=='online'){
 			    		//console.log('razorpay payment page redirect');
-			    		window.location.href = 'razorpay-php-testapp-master/pay.php?checkout=automatic&orderid='+retArr[1];
+			    		window.location.href = 'razorpay-php-testapp-master/pay.php';
 		    		}
 		    		else{
 		    			//console.log('COD success page redirect');
