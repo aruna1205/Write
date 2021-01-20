@@ -11,8 +11,6 @@
 	
 	
 	$common->sendOrderPlacementMail($orderDetails);
-	
-	//mail( 'email4arun@gmail.com', 'Writeneat Demo', 'Your Order has been placed. Thank you' );
 
 ?>
 <!DOCTYPE html>
