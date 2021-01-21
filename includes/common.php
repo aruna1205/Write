@@ -9,6 +9,7 @@ class common {
 	public function __construct() {
 		require('dbconfig.php');
 		$this->db = new db($dbhost, $dbuser, $dbpass, $dbname, 'utf8');
+		$this->db->query("SET time_zone='+5:30';");
 		$this->FBTrackingID = $FBTrackingID;
 	}
 
